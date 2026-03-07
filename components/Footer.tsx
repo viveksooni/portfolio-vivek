@@ -7,14 +7,11 @@ interface RepoStats {
 }
 
 const Footer = async () => {
-    const repoStats = await fetch(
-        'https://api.github.com/repos/tajmirul/portfolio-2.0',
-        {
-            next: {
-                revalidate: 60 * 60, // 1 hour
-            },
+    const repoStats = await fetch('https://api.github.com/repos/viveksooni', {
+        next: {
+            revalidate: 60 * 60, // 1 hour
         },
-    );
+    });
 
     const { stargazers_count, forks_count } =
         (await repoStats.json()) as RepoStats;
@@ -32,11 +29,11 @@ const Footer = async () => {
 
                 <div className="">
                     <a
-                        href="https://github.com/Tajmirul/portfolio-2.0"
+                        href="https://github.com/Vivek/portfolio-2.0"
                         target="_blank"
                         className="leading-none text-muted-foreground hover:underline hover:text-white"
                     >
-                        Design & built by Tajmirul Islam
+                        Design & built by Vivek Soni
                         <div className="flex items-center justify-center gap-5 pt-1">
                             <span className="flex items-center gap-2">
                                 <Star size={18} /> {stargazers_count}
@@ -47,9 +44,9 @@ const Footer = async () => {
                         </div>
                     </a>
 
-                    {/* Note: If you are not Tajmirul, use this copyright message instead */}
+                    {/* Note: If you are not Vivek, use this copyright message instead */}
                     {/* <a href='https://www.me.toinfinite.dev/' className="leading-none text-muted-foreground hover:underline hover:text-white">
-                        Design & built by Tajmirul Islam <br />
+                        Design & built by Vivek Soni <br />
                         Revised by YOUR NAME
 
                         <div className="flex items-center justify-center gap-5 pt-1">

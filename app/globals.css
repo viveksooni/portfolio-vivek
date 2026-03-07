@@ -1,36 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
     :root {
-        --background: 0 0% 13%;
-        --background-light: 0 0% 19%;
-        --foreground: 0 0% 87%;
+        --background: 0 0% 8%; /* Rich black #141414 */
+        --background-light: 30 15% 14%; /* Warm dark gray */
+        --foreground: 40 20% 95%; /* Crisp warm white */
 
-        --card: 0 0% 3.9%;
-        --card-foreground: 0 0% 98%;
-        --popover: 0 0% 3.9%;
-        --popover-foreground: 0 0% 98%;
+        --card: 30 15% 14%;
+        --card-foreground: 40 20% 95%;
+        --popover: 30 15% 14%;
+        --popover-foreground: 40 20% 95%;
 
-        --primary: 140 100% 47%;
-        --primary-foreground: 0 0% 13%;
-        --secondary: 193 100% 47%;
-        --secondary-foreground: 0 0% 13%;
-        --muted: 0 0% 14.9%;
-        --muted-foreground: 0 0% 71%;
-        --accent: 0 0% 14.9%;
-        --accent-foreground: 0 0% 98%;
-        --destructive: 0 62.8% 30.6%;
+        --primary: 45 95% 60%; /* Bold electric gold ⚡ */
+        --primary-foreground: 0 0% 8%;
+        --secondary: 35 88% 62%; /* Vibrant orange-amber ⚡ */
+        --secondary-foreground: 0 0% 8%;
+
+        --muted: 30 12% 18%;
+        --muted-foreground: 40 18% 68%;
+        --accent: 48 100% 58%; /* Pure bright gold ⚡ */
+        --accent-foreground: 0 0% 8%;
+
+        --destructive: 0 85% 58%; /* Bright red */
         --destructive-foreground: 0 0% 98%;
-        --border: 0 0% 24%;
-        --input: 0 0% 14.9%;
-        --ring: 0 0% 83.1%;
-        --chart-1: 220 70% 50%;
-        --chart-2: 160 60% 45%;
-        --chart-3: 30 80% 55%;
-        --chart-4: 280 65% 60%;
-        --chart-5: 340 75% 55%;
+        --border: 30 12% 26%;
+        --input: 30 12% 18%;
+        --ring: 45 95% 60%;
+
+        --chart-1: 45 95% 60%; /* Electric gold */
+        --chart-2: 35 88% 62%; /* Vibrant amber */
+        --chart-3: 40 92% 58%; /* Bright bronze */
+        --chart-4: 30 85% 60%; /* Rich orange */
+        --chart-5: 50 90% 62%; /* Lemon gold */
     }
 }
 

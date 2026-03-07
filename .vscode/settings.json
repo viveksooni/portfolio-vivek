@@ -11,4 +11,17 @@
     "[xml]": {
         "editor.defaultFormatter": "redhat.vscode-xml"
     },
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#51114A",
+        "titleBar.activeBackground": "#721868",
+        "titleBar.activeForeground": "#FEFCFE",
+        "titleBar.inactiveBackground": "#51114A",
+        "titleBar.inactiveForeground": "#FEFCFE",
+        "statusBar.background": "#51114A",
+        "statusBar.foreground": "#FEFCFE",
+        "statusBar.debuggingBackground": "#51114A",
+        "statusBar.debuggingForeground": "#FEFCFE",
+        "statusBar.noFolderBackground": "#51114A",
+        "statusBar.noFolderForeground": "#FEFCFE"
+    },
 }
