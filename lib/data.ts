@@ -161,7 +161,7 @@ export const PROJECTS: IProject[] = [
         ],
     },
     {
-        title: 'Chat App',
+        title: 'Chat App2',
         slug: 'epikcart',
         techStack: [
             'React',
