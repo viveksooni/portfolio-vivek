@@ -108,7 +108,7 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'Electro EV',
+        title: 'Blogging website',
         slug: 'electro-ev',
         liveUrl: 'https://electroev.co.uk/',
         year: 2025,
