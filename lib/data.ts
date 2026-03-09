@@ -71,6 +71,10 @@ export const MY_STACK = {
             name: 'Express.js',
             icon: '/logo/express.png',
         },
+        {
+            name: 'Prisma',
+            icon: '/logo/prisma.png',
+        },
     ],
     database: [
         {
@@ -84,10 +88,6 @@ export const MY_STACK = {
         {
             name: 'MongoDB',
             icon: '/logo/mongodb.svg',
-        },
-        {
-            name: 'Prisma',
-            icon: '/logo/prisma.png',
         },
     ],
     tools: [
