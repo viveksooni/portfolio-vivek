@@ -65,9 +65,21 @@ const Experiences = () => {
                             <p className="text-5xl font-anton leading-none mt-3.5 mb-2.5">
                                 {item.title}
                             </p>
-                            <p className="text-lg text-muted-foreground">
+                            <p className="text-lg text-muted-foreground mb-4">
                                 {item.duration}
                             </p>
+                            {item.description && (
+                                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                                    {item.description.map((bullet, index) => (
+                                        <li
+                                            key={index}
+                                            className="text-lg leading-relaxed"
+                                        >
+                                            {bullet}
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
                         </div>
                     ))}
                 </div>

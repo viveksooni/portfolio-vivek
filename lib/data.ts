@@ -2,6 +2,7 @@ import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
     email: 'sonivivek346@gmail.com',
+    phone: '+91 7054672275',
 
     emailSubject: "Let's collaborate on a project",
     emailBody: 'Hi Vivek, I am reaching out to you because...',
@@ -26,7 +27,15 @@ export const MY_STACK = {
             icon: '/logo/ts.png',
         },
         {
-            name: 'React',
+            name: 'HTML5',
+            icon: '/logo/html.png',
+        },
+        {
+            name: 'CSS3',
+            icon: '/logo/css.png',
+        },
+        {
+            name: 'React.js',
             icon: '/logo/react.png',
         },
         {
@@ -34,7 +43,7 @@ export const MY_STACK = {
             icon: '/logo/next.png',
         },
         {
-            name: 'Redux',
+            name: 'Redux Toolkit',
             icon: '/logo/redux.png',
         },
         {
@@ -42,20 +51,12 @@ export const MY_STACK = {
             icon: '/logo/tailwind.png',
         },
         {
-            name: 'GSAP',
-            icon: '/logo/gsap.png',
-        },
-        {
             name: 'Framer Motion',
             icon: '/logo/framer-motion.png',
         },
         {
-            name: 'Sass',
-            icon: '/logo/sass.png',
-        },
-        {
-            name: 'Bootstrap',
-            icon: '/logo/bootstrap.svg',
+            name: 'Vite',
+            icon: '/logo/react.png',
         },
     ],
     backend: [
@@ -64,16 +65,16 @@ export const MY_STACK = {
             icon: '/logo/node.png',
         },
         {
-            name: 'NestJS',
-            icon: '/logo/nest.svg',
-        },
-        {
             name: 'Express.js',
             icon: '/logo/express.png',
         },
         {
-            name: 'Prisma',
+            name: 'Prisma ORM',
             icon: '/logo/prisma.png',
+        },
+        {
+            name: 'Redis',
+            icon: '/logo/mongodb.svg',
         },
     ],
     database: [
@@ -103,10 +104,123 @@ export const MY_STACK = {
             name: 'AWS',
             icon: '/logo/aws.png',
         },
+        {
+            name: 'GitHub Actions',
+            icon: '/logo/github.png',
+        },
+        {
+            name: 'Nginx',
+            icon: '/logo/js.png',
+        },
+        {
+            name: 'PM2',
+            icon: '/logo/node.png',
+        },
+        {
+            name: 'Webpack',
+            icon: '/logo/js.png',
+        },
     ],
 };
 
 export const PROJECTS: IProject[] = [
+    {
+        title: 'Distributed Task Queue System',
+        slug: 'distributed-task-queue',
+        year: 2024,
+        description: `
+      Architected microservices job queue processing 10K+ tasks/hour with priority scheduling and dead-letter queue handling.<br/><br/>
+      Deployed on Docker Swarm achieving 99.9% completion rate and 65% faster throughput.
+      `,
+        role: `
+      Backend Architect <br/>
+      <ul>
+        <li>Implemented Node.js with Redis and Bull for reliable queue processing.</li>
+        <li>Set up Docker Swarm for deployment and fault tolerance.</li>
+        <li>Architected PostgreSQL database schema for task state management.</li>
+      </ul>
+      `,
+        techStack: [
+            'Node.js',
+            'Redis',
+            'Bull',
+            'PostgreSQL',
+            'Docker',
+        ],
+        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
+        longThumbnail: '/projects/long/resume-roaster.jpg',
+        images: [
+            '/projects/images/resume-roaster-1.png',
+            '/projects/images/resume-roaster-2.png',
+        ],
+        sourceCode: 'https://github.com/viveksooni',
+    },
+    {
+        title: 'Real-Time Analytics Dashboard',
+        slug: 'real-time-analytics-dashboard',
+        year: 2024,
+        description: `
+      SSE-powered dashboard serving 500+ concurrent users at sub-100ms refresh.<br/><br/>
+      Processed 1M+ records at 95% cache hit rate with PostgreSQL materialized views and Redis caching.
+      `,
+        role: `
+      Full Stack Developer <br/>
+      <ul>
+        <li>Built frontend with Next.js 14, TypeScript and Recharts.</li>
+        <li>Implemented SSE (Server-Sent Events) for real-time data streaming.</li>
+        <li>Optimized database via PostgreSQL materialized views and Redis.</li>
+      </ul>
+      `,
+        techStack: [
+            'Next.js 14',
+            'TypeScript',
+            'WebSocket',
+            'Recharts',
+            'Prisma',
+            'Redis',
+            'PostgreSQL',
+        ],
+        thumbnail: '/projects/thumbnail/property-pro.jpg',
+        longThumbnail: '/projects/long/property-pro.jpg',
+        images: [
+            '/projects/images/property-pro-1.png',
+            '/projects/images/property-pro-2.png',
+        ],
+        sourceCode: 'https://github.com/viveksooni',
+    },
+    {
+        title: 'E-Learning Platform',
+        slug: 'e-learning-platform',
+        year: 2024,
+        description: `
+      Developed HLS video streaming platform with progress tracking for 2K+ students across 50+ courses.<br/><br/>
+      Implemented type-safe tRPC API with JWT authentication and role-based access control.
+      `,
+        role: `
+      Full Stack Developer <br/>
+      <ul>
+        <li>Integrated AWS S3 for secure video storage and HLS streaming.</li>
+        <li>Built type-safe APIs using tRPC and validated inputs.</li>
+        <li>Implemented Stripe for payment processing and subscriptions.</li>
+      </ul>
+      `,
+        techStack: [
+            'Next.js',
+            'TypeScript',
+            'tRPC',
+            'Prisma',
+            'AWS S3',
+            'Stripe',
+        ],
+        thumbnail: '/projects/thumbnail/epikcart.jpg',
+        longThumbnail: '/projects/long/epikcart.jpg',
+        images: [
+            '/projects/images/epikcart-1.png',
+            '/projects/images/epikcart-2.png',
+            '/projects/images/epikcart-3.png',
+        ],
+        sourceCode: 'https://github.com/viveksooni',
+    },
     {
         title: 'Blogging websites',
         slug: 'electro-ev',
@@ -284,23 +398,32 @@ export const PROJECTS: IProject[] = [
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
+        title: 'Assistant Manager (Full Stack Developer)',
+        company: 'Startup Incubation and Innovation Centre, IIT Kanpur',
+        duration: 'Aug 2025 - Present',
+        description: [
+            'Engineered Prism Pulse Connect portal for DSIR using React, Express.js, and MySQL; launched by the Minister of Science & Technology and deployed to IIT Kanpur production servers handling 500+ concurrent users at 99.8% uptime.',
+            'Built SIIC institutional website and event registration platform processing 2,000+ registrations with zero downtime; integrated IIT Kanpur SMTP server for automated transactional email delivery.',
+            'Optimized MySQL queries and conducted Artillery load testing at 1,000+ req/s, reducing average API response time from 800ms to 120ms (85% improvement).',
+        ],
     },
     {
-        title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
+        title: 'Frontend Developer (Freelance)',
+        company: 'Freelance Projects',
+        duration: 'Nov 2024 - July 2025',
+        description: [
+            'Built 5+ client-facing applications using React and Next.js; achieved 95+ PageSpeed scores across all projects through server-side rendering, code splitting, and Vercel Edge Functions.',
+            'Developed full-stack e-commerce platform with Next.js and Stripe integration; reduced infrastructure costs by 40% using serverless architecture with sub-200ms API response times.',
+        ],
     },
     {
-        title: 'Frontend Engineer',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
-    },
-    {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
+        title: 'Software Developer',
+        company: 'Wipro Limited',
+        duration: 'Mar 2023 - Nov 2024',
+        description: [
+            'Developed EdTech platform frontend using React and TypeScript serving 50K+ monthly active users with 99.5% uptime and sub-2s load time.',
+            'Reduced JavaScript bundle size from 2.8MB to 1.5MB (45%) via lazy loading and code splitting, improving Core Web Vitals scores across the application.',
+        ],
     },
 ];
+

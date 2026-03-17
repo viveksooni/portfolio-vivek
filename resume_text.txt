@@ -1,0 +1,50 @@
+Vivek Soni
+Kanpur, India
++91 7054672275|sonivivek346@gmail.com|linkedin.com/in/sonivivek346|github.com/viveksooni
+PROFESSIONAL SUMMARY
+Full Stack Developer with 3+ years building production-grade web applications using React, Next.js, and Node.js. Delivered
+government-launched platforms and systems serving 50K+ users; reduced query response time by 85% and bundle size by
+45%.
+TECHNICAL SKILLS
+Languages:JavaScript (ES6+), TypeScript, HTML5, CSS3, SQL
+Frontend:React.js, Next.js, Redux Toolkit, Tailwind CSS, Framer Motion
+Backend & Databases:Node.js, Express.js, REST APIs, MySQL, MongoDB, Prisma ORM, Redis
+DevOps & Tools:Git, Docker, AWS (EC2, S3), GitHub Actions, Nginx, PM2, Webpack, Vite
+PROFESSIONAL EXPERIENCE
+Assistant Manager (Full Stack Developer)August 2025 – Present
+Startup Incubation and Innovation Centre, IIT Kanpur Kanpur, India
+•Engineered Prism Pulse Connect portal for DSIR using React, Express.js, and MySQL; launched by the Minister of Science &
+Technology and deployed to IIT Kanpur production servers handling 500+ concurrent users at 99.8% uptime.
+•Built SIIC institutional website and event registration platform processing 2,000+ registrations with zero downtime;
+integrated IIT Kanpur SMTP server for automated transactional email delivery.
+•Optimized MySQL queries and conducted Artillery load testing at 1,000+ req/s, reducing average API response time from
+800ms to 120ms (85% improvement).
+Frontend DeveloperNovember 2024 – July 2025
+Freelance Kanpur, India
+•Built 5+ client-facing applications using React and Next.js; achieved 95+ PageSpeed scores across all projects through
+server-side rendering, code splitting, and Vercel Edge Functions.
+•Developed full-stack e-commerce platform with Next.js and Stripe integration; reduced infrastructure costs by 40% using
+serverless architecture with sub-200ms API response times.
+Software DeveloperMarch 2023 – November 2024
+Wipro Limited Gurugram, India
+•Developed EdTech platform frontend using React and TypeScript serving 50K+ monthly active users with 99.5% uptime and
+sub-2s load time.
+•Reduced JavaScript bundle size from 2.8MB to 1.5MB (45%) via lazy loading and code splitting, improving Core Web Vitals
+scores across the application.
+PROJECTS
+Distributed Task Queue System|Node.js, Redis, Bull, PostgreSQL, Docker|GitHub
+•Architected microservices job queue processing 10K+ tasks/hour with priority scheduling and dead-letter queue handling;
+deployed on Docker Swarm achieving 99.9% completion rate and 65% faster throughput.
+Real-Time Analytics Dashboard|Next.js 14, TypeScript, WebSocket, Recharts, Prisma|GitHub
+•Built SSE-powered dashboard serving 500+ concurrent users at sub-100ms refresh; implemented PostgreSQL materialized
+views and Redis caching to process 1M+ records at 95% cache hit rate.
+E-Learning Platform|Next.js, TypeScript, tRPC, Prisma, AWS S3, Stripe|GitHub
+•Developed HLS video streaming platform with progress tracking for 2K+ students across 50+ courses; implemented type-safe
+tRPC API with JWT authentication and role-based access control.
+EDUCATION
+B.Tech in Computer Science and EngineeringJuly 2018 – August 2022
+PSIT College of Engineering, AKTU CGPA: 8.5/10
+CERTIFICATIONS & ACHIEVEMENTS
+•AWS Certified Cloud Practitioner– Amazon Web Services|MEAN Stack Certification– Great Learning
+•Solved 300+ LeetCode problems covering arrays, dynamic programming, trees, and graphs
+•Published 10+ technical articles on React.js and Next.js performance with 50K+ total views
