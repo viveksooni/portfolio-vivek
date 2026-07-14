@@ -3,36 +3,36 @@
 @tailwind utilities;
 @layer base {
     :root {
-        --background: 0 0% 8%; /* Rich black #141414 */
-        --background-light: 30 15% 14%; /* Warm dark gray */
-        --foreground: 40 20% 95%; /* Crisp warm white */
+        --background: 200 15% 7%; /* Obsidian black */
+        --background-light: 160 10% 13%; /* Deep emerald-tinted charcoal */
+        --foreground: 210 20% 96%; /* Crisp cool white */
 
-        --card: 30 15% 14%;
-        --card-foreground: 40 20% 95%;
-        --popover: 30 15% 14%;
-        --popover-foreground: 40 20% 95%;
+        --card: 160 10% 13%;
+        --card-foreground: 210 20% 96%;
+        --popover: 160 10% 13%;
+        --popover-foreground: 210 20% 96%;
 
-        --primary: 45 95% 60%; /* Bold electric gold ⚡ */
-        --primary-foreground: 0 0% 8%;
-        --secondary: 35 88% 62%; /* Vibrant orange-amber ⚡ */
-        --secondary-foreground: 0 0% 8%;
+        --primary: 158 64% 45%; /* Rich emerald ⚡ */
+        --primary-foreground: 200 15% 7%;
+        --secondary: 165 45% 35%; /* Deep jade */
+        --secondary-foreground: 210 20% 96%;
 
-        --muted: 30 12% 18%;
-        --muted-foreground: 40 18% 68%;
-        --accent: 48 100% 58%; /* Pure bright gold ⚡ */
-        --accent-foreground: 0 0% 8%;
+        --muted: 160 8% 16%;
+        --muted-foreground: 150 8% 65%;
+        --accent: 150 70% 50%; /* Bright mint-emerald ⚡ */
+        --accent-foreground: 200 15% 7%;
 
         --destructive: 0 85% 58%; /* Bright red */
         --destructive-foreground: 0 0% 98%;
-        --border: 30 12% 26%;
-        --input: 30 12% 18%;
-        --ring: 45 95% 60%;
+        --border: 160 10% 22%;
+        --input: 160 8% 16%;
+        --ring: 158 64% 45%;
 
-        --chart-1: 45 95% 60%; /* Electric gold */
-        --chart-2: 35 88% 62%; /* Vibrant amber */
-        --chart-3: 40 92% 58%; /* Bright bronze */
-        --chart-4: 30 85% 60%; /* Rich orange */
-        --chart-5: 50 90% 62%; /* Lemon gold */
+        --chart-1: 158 64% 45%; /* Emerald */
+        --chart-2: 170 50% 40%; /* Teal */
+        --chart-3: 145 55% 42%; /* Jade */
+        --chart-4: 190 45% 45%; /* Cyan-teal */
+        --chart-5: 120 40% 45%; /* Forest green */
     }
 }
 
