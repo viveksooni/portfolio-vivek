@@ -29,6 +29,7 @@ const robotoFlex = Roboto_Flex({
 export const metadata: Metadata = {
     title: 'Portfolio - Vivek Soni',
     description: 'Personal portfolio of Vivek Soni',
+    manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({
