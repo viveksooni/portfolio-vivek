@@ -9,6 +9,7 @@ export const GENERAL_INFO = {
 
     oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
     upworkProfile: 'https://www.upwork.com/freelancers/Vivek',
+    linkedinProfile: 'https://www.linkedin.com/in/sonivivek346',
 };
 
 export const SOCIAL_LINKS = [
