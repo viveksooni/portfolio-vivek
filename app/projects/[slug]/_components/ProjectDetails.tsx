@@ -7,6 +7,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { ArrowLeft, ExternalLink, Github } from 'lucide-react';
+import Image from 'next/image';
 import { useRef } from 'react';
 
 interface Props {
@@ -65,6 +66,7 @@ const ProjectDetails = ({ project }: Props) => {
     // parallax effect on images
     useGSAP(
         () => {
+            if (project.slug === 'agrodetect') return;
             gsap.utils
                 .toArray<HTMLDivElement>('#images > div')
                 .forEach((imageDiv, i) => {
@@ -135,10 +137,12 @@ const ProjectDetails = ({ project }: Props) => {
                         <div className="max-w-[635px] space-y-7 pb-20 mx-auto">
                             <div className="fade-in-later">
                                 <p className="text-muted-foreground font-anton mb-3">
-                                    Year
+                                    {project.timeline ? 'Timeline' : 'Year'}
                                 </p>
 
-                                <div className="text-lg">{project.year}</div>
+                                <div className="text-lg">
+                                    {project.timeline ?? project.year}
+                                </div>
                             </div>
                             <div className="fade-in-later">
                                 <p className="text-muted-foreground font-anton mb-3">
@@ -182,14 +186,24 @@ const ProjectDetails = ({ project }: Props) => {
                     {project.images.map((image) => (
                         <div
                             key={image}
-                            className="group relative w-full aspect-[750/400] bg-background-light"
-                            style={{
+                            className={`group relative w-full bg-background-light ${project.slug === 'agrodetect' ? '' : 'aspect-[750/400]'}`}
+                            style={project.slug === 'agrodetect' ? undefined : {
                                 backgroundImage: `url(${image})`,
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center 50%',
                                 backgroundRepeat: 'no-repeat',
                             }}
                         >
+                            {project.slug === 'agrodetect' && (
+                                <Image
+                                    src={image}
+                                    alt={`${project.title} — ${image.includes('mobile') ? 'mobile app' : 'website overview'}`}
+                                    width={1600}
+                                    height={1000}
+                                    sizes="(max-width: 800px) 100vw, 800px"
+                                    className="block w-full h-auto"
+                                />
+                            )}
                             <a
                                 href={image}
                                 target="_blank"

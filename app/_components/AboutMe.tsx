@@ -73,17 +73,19 @@ const AboutMe = () => {
                     <div className="md:col-span-7">
                         <div className="text-lg text-muted-foreground max-w-[450px]">
                             <p className="slide-up-and-fade">
-                                I&apos;m a Full Stack Developer with 3+ years
-                                building production-grade web applications using
-                                React, Next.js, and Node.js.
+                                I&apos;m Vivek, a Full Stack Developer working
+                                since March 2023. I build production-grade web
+                                applications using React, Next.js, TypeScript,
+                                and Node.js.
                             </p>
                             <p className="mt-3 slide-up-and-fade">
-                                I have delivered government-launched platforms
-                                and systems serving 50K+ users; successfully
-                                reducing query response time by 85% and bundle
-                                size by 45%. I specialize in creating seamless,
-                                intuitive user experiences and high-performing
-                                solutions.
+                                From enterprise applications at Wipro to
+                                freelance projects and government-launched
+                                platforms at SIIC, IIT Kanpur, I turn complex
+                                requirements into intuitive, reliable products.
+                                My work includes applications serving 50K+
+                                monthly users, reducing API response times by
+                                85%, and cutting JavaScript bundle sizes by 45%.
                             </p>
                         </div>
                     </div>

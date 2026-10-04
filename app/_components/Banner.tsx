@@ -1,7 +1,7 @@
 'use client';
 import ArrowAnimation from '@/components/ArrowAnimation';
 import Button from '@/components/Button';
-import { GENERAL_INFO } from '@/lib/data';
+import { GENERAL_INFO, PROJECTS } from '@/lib/data';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
@@ -50,7 +50,7 @@ const Banner = () => {
                         <span className="font-medium text-foreground">
                             Vivek
                         </span>
-                        . A Full Stack Developer with 3+ years of experience in
+                        . A Full Stack Developer working since March 2023,
                         building production-grade, high-performance, and
                         scalable web solutions.
                     </p>
@@ -77,17 +77,17 @@ const Banner = () => {
                     </div>
                     <div className="slide-up-and-fade">
                         <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            7+
+                            {PROJECTS.length}
                         </h5>
                         <p className="text-muted-foreground">
-                            Completed Projects
+                            Portfolio Projects
                         </p>
                     </div>
                     <div className="slide-up-and-fade">
                         <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            10K+
+                            2023
                         </h5>
-                        <p className="text-muted-foreground">Hours Worked</p>
+                        <p className="text-muted-foreground">Working Since</p>
                     </div>
                 </div>
             </div>

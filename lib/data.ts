@@ -29,11 +29,11 @@ export const MY_STACK = {
         },
         {
             name: 'HTML5',
-            icon: '/logo/html.png',
+            icon: '/logo/html.svg',
         },
         {
             name: 'CSS3',
-            icon: '/logo/css.png',
+            icon: '/logo/css.svg',
         },
         {
             name: 'React.js',
@@ -48,16 +48,32 @@ export const MY_STACK = {
             icon: '/logo/redux.png',
         },
         {
+            name: 'TanStack Query',
+            icon: '/logo/tanstack-query.svg',
+        },
+        {
+            name: 'Zustand',
+            icon: '/logo/zustand.png',
+        },
+        {
             name: 'Tailwind CSS',
             icon: '/logo/tailwind.png',
+        },
+        {
+            name: 'shadcn/ui',
+            icon: '/logo/shadcn-ui.svg',
         },
         {
             name: 'Framer Motion',
             icon: '/logo/framer-motion.png',
         },
         {
+            name: 'GSAP',
+            icon: '/logo/gsap.svg',
+        },
+        {
             name: 'Vite',
-            icon: '/logo/react.png',
+            icon: '/logo/vite.svg',
         },
     ],
     backend: [
@@ -74,8 +90,16 @@ export const MY_STACK = {
             icon: '/logo/prisma.png',
         },
         {
+            name: 'Drizzle ORM',
+            icon: '/logo/drizzle.svg',
+        },
+        {
+            name: 'Zod',
+            icon: '/logo/zod.svg',
+        },
+        {
             name: 'Redis',
-            icon: '/logo/mongodb.svg',
+            icon: '/logo/redis.png',
         },
     ],
     database: [
@@ -111,7 +135,7 @@ export const MY_STACK = {
         },
         {
             name: 'Nginx',
-            icon: '/logo/js.png',
+            icon: '/logo/nginx.svg',
         },
         {
             name: 'PM2',
@@ -119,12 +143,43 @@ export const MY_STACK = {
         },
         {
             name: 'Webpack',
-            icon: '/logo/js.png',
+            icon: '/logo/webpack.png',
+        },
+        {
+            name: 'Turborepo',
+            icon: '/logo/turborepo.svg',
         },
     ],
 };
 
 export const PROJECTS: IProject[] = [
+    {
+        title: 'AgroDetect Website & App',
+        slug: 'agrodetect',
+        liveUrl: 'https://www.agrodetect.in/',
+        year: 2026,
+        timeline: 'June – August 2026',
+        description: `
+      A freelance website and Android app project for AgroDetect, a portable pesticide detection platform for agricultural field testing.<br/><br/>
+      The website introduces the sensing platform, research services, facilities, and mobile app. The companion app brings the field-testing workflow to a phone, with device scanning, crop and soil modes, pesticide readings, a crop library, real-time data, and result history.
+      `,
+        role: `
+      Freelance Website & App Developer<br/>
+      June – end of August 2026
+      <ul>
+        <li>Designed and built the AgroDetect website to present its technology, services, and research facilities.</li>
+        <li>Built the companion Android app for device scanning and viewing pesticide detection results.</li>
+        <li>Developed the mobile interface for crop and soil testing, a crop library, real-time readings, and result history.</li>
+      </ul>
+      `,
+        techStack: ['Web Development', 'Android App', 'UI/UX Design'],
+        thumbnail: '/projects/images/agrodetect-website.png',
+        longThumbnail: '/projects/images/agrodetect-website-full.png',
+        images: [
+            '/projects/images/agrodetect-website.png',
+            '/projects/images/agrodetect-mobile-section.png',
+        ],
+    },
     {
         title: 'Distributed Task Queue System',
         slug: 'distributed-task-queue',
@@ -403,9 +458,19 @@ export const MY_EXPERIENCE = [
         company: 'Startup Incubation and Innovation Centre, IIT Kanpur',
         duration: 'Aug 2025 - Present',
         description: [
-            'Engineered Prism Pulse Connect portal for DSIR using React, Express.js, and MySQL; launched by the Minister of Science & Technology and deployed to IIT Kanpur production servers handling 500+ concurrent users at 99.8% uptime.',
-            'Built SIIC institutional website and event registration platform processing 2,000+ registrations with zero downtime; integrated IIT Kanpur SMTP server for automated transactional email delivery.',
-            'Optimized MySQL queries and conducted Artillery load testing at 1,000+ req/s, reducing average API response time from 800ms to 120ms (85% improvement).',
+            'Rebuilt SIIC\'s institutional platform with React and Node.js, improving load performance by ~60% and organizing content for 261 startups and 46 programmes; generated 4.1K organic sessions.',
+            'Delivered PRISM Pulse Connect for DSIR and a secure 14-module employee portal with biometric attendance, four-level role-based access, and 100+ migrated employee records; maintained 99.8% uptime.',
+            'Modernized four programme and event websites, owned testing and production deployment on IIT Kanpur infrastructure, supported a ministerial launch, and mentored a development intern.',
+        ],
+    },
+    {
+        title: 'Website & App Developer (Freelance)',
+        company: 'AgroDetect',
+        duration: 'June 2026 - August 2026',
+        description: [
+            'Designed and built agrodetect.in to showcase the portable pesticide detection platform, research services, facilities, and companion mobile app.',
+            'Built the AgroDetect Android app with device scanning, crop and soil testing interfaces, pesticide readings, a crop library, real-time data, and result history.',
+            'Delivered the website and app as a freelance engagement from June through the end of August.',
         ],
     },
     {
